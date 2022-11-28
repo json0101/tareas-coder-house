@@ -1,0 +1,1 @@
+[{"id":1,"title":"cambio","description":"Cambio prueba","price":20000,"thumbnail":"prueba.png","code":"009","stock":9},{"id":2,"title":"Mesa","description":"Mesa de bebe","price":300,"thumbnail":"mesa.png","code":"002","stock":2}]
