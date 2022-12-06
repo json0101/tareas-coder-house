@@ -58,16 +58,18 @@ class ProductManager {
     }
 }
 
-const main = async () => {
-    const productManager = new ProductManager('./file/products.txt');
-    await productManager.addProduct('Silla', 'Silla de bebe', 200, 'silla.png', '001', 1);
-    await productManager.addProduct('Mesa', 'Mesa de bebe', 300, 'mesa.png', '002', 2);
-    await productManager.addProduct('PS5', 'PS5 version digital', 100, 'ps5.png', '003', 3);
-    // console.log((await productManager.getProductById(3)));
-    await productManager.deleteProduct(3);
-    // console.log((await productManager.getProductById(3)));
+// const main = async () => {
+//     const productManager = new ProductManager('./file/products.txt');
+//     await productManager.addProduct('Lapto', 'Dell', 2000, 'lapto.png', '210', 1);
+//     await productManager.addProduct('Teclado', 'HP', 50, 'teclado.png', '211', 2);
+//     await productManager.addProduct('Mouse', 'Microsoft', 75, 'mouse.png', '212', 3);
+//     await productManager.addProduct('Monitor', 'Monitor marca hp', 400, 'monitor.png', '213', 1);
+//     await productManager.addProduct('Legend of Zelda', 'Juego de nintendo', 200, 'zelda.png', '101', 2);
+//     await productManager.addProduct('Pokemon Purpura', 'Nuevo juego', 150, 'purpura.png', '102', 3);
+//     await productManager.addProduct('Pokemon Escarlata', 'Juego de nintendo', 150, 'escarlata.png', '103', 2);
+//     await productManager.addProduct('Mochila', 'mochila de montaña', 125, 'mochila.png', '062', 3);
+// }
 
-    await productManager.updateProduct(1, { title: 'cambio', description: 'Cambio prueba', price: 20000, thumbnail: 'prueba.png', code: '009', stock: 9});
-}
+// main();
 
-main();
+module.exports = ProductManager;
